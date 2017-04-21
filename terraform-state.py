@@ -66,7 +66,6 @@ def move_resource(res):
         new_modules = []
         for m in modules:
             if res in m["path"]:
-                new_modules.append(m)
                 del modified_target_state["modules"][modified_target_state["modules"].index(m)]
                 new_state["modules"].append(m)
 
